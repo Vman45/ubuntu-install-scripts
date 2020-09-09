@@ -19,6 +19,7 @@ The scripts are tested on KDE Neon based on Ubuntu 20.04 LTS (Focal Fossa). Sinc
 - Microsoft Teams
 - Slack
 - Signal
+- Element (Matrix client)
 - Zoom
 - Spotify
 - KeePassXC

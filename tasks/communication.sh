@@ -33,6 +33,15 @@ sudo apt update > /dev/null 2>&1
 sudo apt-get --yes install signal-desktop > /dev/null 2>&1
 echo "Done"
 
+# Install Matrix Client Element
+echo -n "Installation of Matrix client...   "
+sudo apt-get --yes install apt-transport-https > /dev/null 2>&1
+curl -fsSL https://packages.riot.im/debian/riot-im-archive-keyring.gpg | sudo apt-key add - > /dev/null 2>&1
+sudo sh -c 'echo "deb https://packages.riot.im/debian/ default main" > /etc/apt/sources.list.d/riot-im.list'  > /dev/null 2>&1
+sudo apt-get update > /dev/null 2>&1
+sudo apt-get --yes install element-desktop > /dev/null 2>&1
+echo "Done"
+
 # Zoom installation
 zoomdesktop=$(dpkg -s zoom 2>/dev/null | grep Status)
 if [[ $zoomdesktop != *"installed"* ]]; 
