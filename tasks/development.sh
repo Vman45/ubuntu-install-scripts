@@ -83,4 +83,5 @@ else
         echo "Categories=Development;IDE;Java;" >> $icon
         echo "StartupWMClass=Eclipse" >> $icon
     fi
+    echo "Done"
 fi
