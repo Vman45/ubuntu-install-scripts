@@ -44,9 +44,6 @@ If you like this somehow and you have a question or a specific request just open
 # To Do
 
 - Hugo extended
-- Anaconda/Miniconda
-    - https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
-    - https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html#install-macos-silent
 - Matlab
 
 
