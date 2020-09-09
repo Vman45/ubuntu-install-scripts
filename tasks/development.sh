@@ -41,19 +41,18 @@ sudo apt-get --yes install python3 python3-venv python3-pip build-essential libs
 echo "Done"
 
 # Miniconda
-if [ -d /home/$SUDO_USER/miniconda3 ] 
+if [ -d /home/$SUDO_USER/miniconda3 ]
 then
     echo "Miniconda3 is already installed...   Skip"
 else
     echo -n "Installing Miniconda3...   "
-    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh > /dev/null 2>&1
-    # Check permissions after installation
-    bash ~/miniconda.sh -b > /dev/null 2>&1
-    source /home/$SUDO_USER/miniconda3/bin/activate > /dev/null 2>&1 && conda init > /dev/null 2>&1
-    conda config --set auto_activate_base false > /dev/null 2>&1
+    sudo -u $SUDO_USER wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh > /dev/null 2>&1
+    sudo -u $SUDO_USER bash ./miniconda.sh -b > /dev/null 2>&1
+    sudo -u $SUDO_USER /home/arthur/miniconda3/bin/conda init bash > /dev/null 2>&1
+    sudo -u $SUDO_USER /home/arthur/miniconda3/bin/conda config --set auto_activate_base false > /dev/null 2>&1
     rm -rf miniconda.sh > /dev/null 2>&1
     echo "Done"
-fi
+
 
 # Java
 echo -n "Installing development environment for Java 14...   "
