@@ -52,7 +52,7 @@ else
     sudo -u $SUDO_USER /home/arthur/miniconda3/bin/conda config --set auto_activate_base false > /dev/null 2>&1
     rm -rf miniconda.sh > /dev/null 2>&1
     echo "Done"
-
+fi
 
 # Java
 echo -n "Installing development environment for Java 14...   "
