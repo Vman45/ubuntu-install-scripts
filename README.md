@@ -26,8 +26,6 @@ The scripts are tested on KDE Neon based on Ubuntu 20.04 LTS (Focal Fossa). Sinc
 - Terraform
 - Vagrant
 - Docker
-- Minikube - TBD
-- Helm - TBD
 - VirtualBox
 - Ansible
 - Anaconda/Miniconda
@@ -49,6 +47,8 @@ If you like this somehow and you have a question or a specific request just open
 
 - Hugo extended
 - Matlab
+- Minikube
+- Helm
 
 
 
