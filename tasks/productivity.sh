@@ -15,7 +15,7 @@ echo "Done"
 # Install LaTeX
 echo -n "Installation of LaTeX...   "
 sudo apt-get --yes install \
-texstudio textstudio-doc texlive-full > /dev/null 2>&1
+texstudio texstudio-doc texlive-full > /dev/null 2>&1
 echo "Done"
 
 # JabRef installation
