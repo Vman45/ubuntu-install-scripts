@@ -27,6 +27,16 @@ sudo apt-get update > /dev/null 2>&1
 sudo apt-get --yes install docker-ce docker-ce-cli containerd.io > /dev/null 2>&1
 echo "Done"
 
+# SaltStack
+echo -n "Installation of Salt...   "
+sudo apt-get --yes install curl gnupg apt-transport-https > /dev/null 2>&1
+curl -fsSL https://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add - > /dev/null 2>&1
+sudo sh -c 'echo "deb http://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest focal main" > /etc/apt/sources.list.d/saltstack.list'  > /dev/null 2>&1
+sudo apt-get update > /dev/null 2>&1
+sudo apt-get --yes install salt-master salt-ssh salt-cloud > /dev/null 2>&1
+echo "Done"
+
+
 # VirtualBox
 echo -n "Installing VirtualBox - Community...   "
 sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common > /dev/null 2>&1
