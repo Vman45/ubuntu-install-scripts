@@ -14,7 +14,7 @@ echo "Done"
 echo -n "Installation of system tools...   "
 sudo apt-get --yes install \
 htop iftop iptraf-ng dnsutils powertop partitionmanager mc tmux \
-yakuake vim openssh-server muon > /dev/null 2>&1
+yakuake vim openssh-server muon ksysguard ksystemlog > /dev/null 2>&1
 echo "Done"
 
 # Install network applications
